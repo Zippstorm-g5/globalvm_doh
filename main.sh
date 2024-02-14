@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 #!/bin/bash
 cd /root
-git clone -b main https://github.com/Zippstorm-g5/globalvm_doh globalvm_doh
+
 mv ./globalvm_doh/cloudflared.service /etc/systemd/system/cloudflared.service 
 wget -P /usr/local/bin https://github.com/Zippstorm-g5/globalvm_doh/releases/download/cloudflared/cloudflared 
 chmod 755 /usr/local/bin/cloudflared
